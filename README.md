@@ -13,8 +13,11 @@ sudo apt install libpcap-dev make gcc gnuplot wget
 gcc -g udprate.c -o udprate -lpcap
 
 mkdir repo
+
 cd repo
+
 wget https://allen.netstat.org.uk/pub/QUIC-google-meet.pcapng
+
 wget https://allen.netstat.org.uk/pub/youtube+web.pcpng.pcapng
 
 SatnexV_WP21$ ./udprate 
