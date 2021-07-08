@@ -34,7 +34,7 @@ You can redirect or append the output to a file to be used as training set, for 
 
 so that when we have enough samples with different labels the algorithm would be able to build a good model.
   
-The script run_ML_test.sh automates this. This script takes the binsize and he number of bins as arguments:
+The script run_ML_test.sh automates this. This script takes the binsize and the number of bins as arguments:
 
 ./run_ML_test.sh 100 10
 
