@@ -130,7 +130,7 @@ int main(int argc, char* argv[])
 	duration_us = end_time - begin_us;
 	bitrate = (((double)(total_data)) / duration_us)*1e6;
 	scale_factor = 1e6/(bitrate*tick_us);
-
+	
 	/* printf("total data: %lld\n", total_data);
 	printf("total duration (us): %lld\n", duration_us);
 	printf("bitrate (bps): %lf\n", bitrate);
