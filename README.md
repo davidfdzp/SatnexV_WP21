@@ -37,6 +37,8 @@ so that when we have enough samples with different labels the algorithm would be
 The script run_ML_test.sh automates this. This script takes the binsize and the number of bins as arguments:
 
 ./run_ML_test.sh 100 10
+  
+When you run ./run_ML_test.sh 100 10, it only does 1sec because it's 10 bins of 100ms. If you want 10sec it's "./run_ML_test.sh 100 100" or just ./run_ML_test.sh as arguments default to 100.
 
 The script reads all the entries in "filenames", processes them with udprate and creates a single CSV file called GT.csv with samples from all the traffic traces.
 Each entry in "filenames" consists of the file name, a start and end time and a label. Comments and blanks are ignored and the same file name can be entered multiple times for different time periods.
